@@ -1,0 +1,31 @@
+<style>
+* {
+background-color:  WhiteSmoke;
+}
+h1, img {
+    padding-bottom: 10px;
+}
+</style>
+
+<div align="center">
+  <h1>Welcome to "Minyoung Posts" :) </h1>
+  <img src="https://s-media-cache-ak0.pinimg.com/originals/ec/4d/a1/ec4da107c9ea17ce69fa1f27f6b9463b.jpg" alt="postowl">
+  <div><h3><%= link_to 'click here to check out the posts!', posts_path %></h3></div>
+  <br>
+
+  <table>
+    <thead>
+      <tr>
+        <th colspan="3">Helpful Links</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td><%= link_to 'About', introduce_about_path %></td>
+          <td><%=link_to 'Contact', introduce_contact_path %></td>
+          <td><%= link_to 'FAQs',  introduce_faq_path %></td>
+        </tr>
+    </tbody>
+  </table>
+
+</div>

@@ -1,0 +1,14 @@
+<h1>FAQs</h1>
+<%= form_for :question do |q| %>
+<p>
+<%= q.label :title %><br>
+<%= q.text_field :title %>
+</p>
+<p>
+<%= q.label :body %><br>
+<%= q.text_area :body %>
+</p>
+<p>
+<%= q.submit %>
+</p>
+<% end %>

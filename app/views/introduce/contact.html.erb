@@ -1,0 +1,15 @@
+<h1>Contact</h1>
+<strong><p>send a message to minyoungha@likelion.org</p></strong>
+<%= form_for :email do |e| %>
+<p>
+<%= e.label :your_address %><br>
+<%= e.text_field :your_address %>
+</p>
+<p>
+<%= e.label :body %><br>
+<%= e.text_area :body %>
+</p>
+<p>
+<%= e.submit %>
+</p>
+<% end %>
